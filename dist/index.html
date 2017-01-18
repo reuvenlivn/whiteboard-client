@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="bundle.css">
+    <title>whiteboard</title>
+  </head>
+  <body>
+   <h1>WhiteBoard</h1>
+    
+    <canvas id="oopCanvas" width="800px" height="500px"></canvas>
+    <div class="controls">
+        <div class="styles">   
+            <div class="shapePicker">
+                <input type="radio" id="rectBtn" value="rect" name="optradio" checked>
+                    <label for="rectBtn">Rectangle</label>
+                <input type="radio" id="triBtn" value="triangle" name="optradio">
+                    <label for="triBtn">Triangle</label>  
+                <input type="radio" id="cirBtn" value="circle" name="optradio">
+                    <label for="cirBtn">Circle</label>
+            </div>
+            <input type="color" class="colorPicker" name="favcolor" value="#000000">
+        </div>
+        <div class="actions">   
+            <button class="clearLast" >Clear Last</button>
+            <button class="clear" >Clear Canvas</button>
+            <button class="save" >Save</button>
+            <button class="load" >Load</button>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
